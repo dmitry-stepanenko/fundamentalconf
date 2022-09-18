@@ -3,6 +3,7 @@
   "version": 2,
   "projects": {
     "awesome-ui": "apps/awesome-ui",
-    "awesome-ui-e2e": "apps/awesome-ui-e2e"
+    "awesome-ui-e2e": "apps/awesome-ui-e2e",
+    "util-format-number": "libs/util-format-number"
   }
 }

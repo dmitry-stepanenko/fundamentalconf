@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@fundamentalconf/util-format-number": [
+        "libs/util-format-number/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
