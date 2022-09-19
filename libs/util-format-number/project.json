@@ -17,6 +17,12 @@
         "jestConfig": "libs/util-format-number/jest.config.ts",
         "passWithNoTests": true
       }
+    },
+    "say-hi-and-run-tests": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "echo \"Hello, fundamentalconf!\" && nx run util-format-number:test"
+      }
     }
   },
   "tags": []
