@@ -1,0 +1,29 @@
+{
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/shared/util-format-number/src",
+  "projectType": "library",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/shared/util-format-number/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/shared/util-format-number"],
+      "options": {
+        "jestConfig": "libs/shared/util-format-number/jest.config.ts",
+        "passWithNoTests": true
+      }
+    },
+    "say-hi-and-run-tests": {
+      "executor": "@nrwl/workspace:run-commands",
+      "options": {
+        "command": "echo \"Hello, fundamentalconf!\" && nx run util-format-number:test"
+      }
+    }
+  },
+  "tags": []
+}

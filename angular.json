@@ -2,8 +2,16 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "admin": "apps/admin",
+    "admin-e2e": "apps/admin-e2e",
+    "admin-feature-control-dashboard": "libs/admin/feature-control-dashboard",
+    "admin-feature-user-management": "libs/admin/feature-user-management",
+    "admin-util-user-stats": "libs/admin/util-user-stats",
     "awesome-ui": "apps/awesome-ui",
     "awesome-ui-e2e": "apps/awesome-ui-e2e",
-    "util-format-number": "libs/util-format-number"
+    "awesome-ui-feature-cart": "libs/awesome-ui/feature-cart",
+    "awesome-ui-feature-products": "libs/awesome-ui/feature-products",
+    "awesome-ui-models-product": "libs/awesome-ui/models-product",
+    "shared-util-format-number": "libs/shared/util-format-number"
   }
 }
