@@ -13,8 +13,16 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "*",
-                "onlyDependOnLibsWithTags": ["*"]
+                "sourceTag": "awesome-ui",
+                "onlyDependOnLibsWithTags": ["awesome-ui", "shared"]
+              },
+              {
+                "sourceTag": "admin",
+                "onlyDependOnLibsWithTags": ["admin", "shared"]
+              },
+              {
+                "sourceTag": "shared",
+                "onlyDependOnLibsWithTags": ["shared"]
               }
             ]
           }
