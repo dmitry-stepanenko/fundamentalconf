@@ -19,5 +19,5 @@
       }
     }
   },
-  "tags": ["awesome-ui"]
+  "tags": ["scope:awesome-ui", "type:feature"]
 }

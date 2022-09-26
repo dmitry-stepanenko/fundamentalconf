@@ -13,16 +13,36 @@
             "allow": [],
             "depConstraints": [
               {
-                "sourceTag": "awesome-ui",
-                "onlyDependOnLibsWithTags": ["awesome-ui", "shared"]
+                "sourceTag": "scope:awesome-ui",
+                "onlyDependOnLibsWithTags": ["scope:awesome-ui", "scope:shared"]
               },
               {
-                "sourceTag": "admin",
-                "onlyDependOnLibsWithTags": ["admin", "shared"]
+                "sourceTag": "scope:admin",
+                "onlyDependOnLibsWithTags": ["scope:admin", "scope:shared"]
               },
               {
-                "sourceTag": "shared",
-                "onlyDependOnLibsWithTags": ["shared"]
+                "sourceTag": "scope:shared",
+                "onlyDependOnLibsWithTags": ["scope:shared"]
+              },
+              {
+                "sourceTag": "type:feature",
+                "onlyDependOnLibsWithTags": ["type:feature", "type:data-access", "type:ui", "type:util", "type:model"]
+              },
+              {
+                "sourceTag": "type:data-access",
+                "onlyDependOnLibsWithTags": ["type:data-access", "type:ui", "type:util", "type:model"]
+              },
+              {
+                "sourceTag": "type:ui",
+                "onlyDependOnLibsWithTags": ["type:ui", "type:util", "type:model"]
+              },
+              {
+                "sourceTag": "type:util",
+                "onlyDependOnLibsWithTags": ["type:util", "type:model"]
+              },
+              {
+                "sourceTag": "type:model",
+                "onlyDependOnLibsWithTags": ["type:model"]
               }
             ]
           }

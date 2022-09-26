@@ -19,5 +19,5 @@
       }
     }
   },
-  "tags": ["admin"]
+  "tags": ["scope:admin", "type:feature"]
 }
